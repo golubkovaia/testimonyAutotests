@@ -8,6 +8,8 @@ import java.util.NoSuchElementException;
 
 public class BasePage {
     protected WebDriver driver;
+    //private WebDriver driver;
+    private By backButton = By.xpath("//*[@id='back_button']");
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
@@ -25,4 +27,7 @@ public class BasePage {
         }
     }
 
+    public void clickBackButton(){
+        click(driver.findElement(backButton));
+    }
 }
