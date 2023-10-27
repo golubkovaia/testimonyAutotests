@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import pages.HistoryPage;
 
 public class MainPage extends Element{
-    private WebDriver driver;
+  //  private WebDriver driver;
     public MainPage(WebDriver driver){
        super(driver);
     }
